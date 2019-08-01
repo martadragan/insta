@@ -8,15 +8,18 @@
         </div>
     
         <div class="col-9 pt-5">
-            <div><h1>insta</h1></div>
+        <div class="d-flex justify-content-between align-items-baseline">
+            <h1>{{ $user->username }}</h1>
+        <a href="#">Add new post</a>
+        </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>265</strong> posts</div>
                 <div class="pr-5"><strong>265</strong> followers</div>
                 <div class="pr-5"><strong>265</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">Insta</div>
-            <div>Bringing you closer to the people and things you love. </div>
-            <div><a href="www.insta.com">www.insta.com</a></div>
+        <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->desc }}</div>
+            <div><a href="www.insta.com">{{ $user->profile->url }}</a></div>
         </div>
     </div>
     <div class="row pt-5">
